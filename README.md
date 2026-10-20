@@ -2,6 +2,8 @@
 
 R 내장 데이터 `state.x77`을 활용하여 주별 살인율과 관련 변수의 관계를 탐색하고, 변수 선택과 회귀 진단을 거쳐 다중회귀모형을 구성한 개인 학습 프로젝트입니다. 2021년에 작성한 발표자료와 분석 기록을 보관합니다.
 
+
+
 ## 파일 구성
 
 | 파일 | 설명 |
@@ -9,6 +11,8 @@ R 내장 데이터 `state.x77`을 활용하여 주별 살인율과 관련 변수
 | [발표자료](다중회귀분석_김시현_20211016.pptx) | 탐색적 분석, 모형 비교, 회귀 진단, 실제값·예측값 비교를 담은 원본 발표자료 |
 | [원본 R 분석 코드](statex77_regression.R) | 분석 코드, 실행 결과 주석 등 학습 메모 |
 | [최종 모형 재현 코드](reproduce_final_model.R) | 원본의 최종 모형을 별도로 실행 가능 |
+
+
 
 ## 데이터와 분석 내용
 
@@ -23,6 +27,8 @@ R 내장 데이터 `state.x77`을 활용하여 주별 살인율과 관련 변수
 ```r
 lm(Murder ~ 0 + Illiteracy + Population, data = analysis_data)
 ```
+
+
 
 ## 실행 방법
 
@@ -39,6 +45,8 @@ install.packages(c("car", "lmtest"))
 ```
 
 원본 `statex77_regression.R`은 RStudio에서 UTF-8로 열어 분석 단위별로 확인하는 학습 기록입니다. 중간 객체명과 PC별 `setwd()` 경로가 포함되어 있으므로 일괄 실행용으로 제공하지 않습니다. 원본에서 참조한 패키지는 `car`, `corrplot`, `dplyr`, `ggplot2`, `gmodels`, `lmtest`, `magrittr`, `MASS`, `pastecs`, `psych`, `readxl`, `reshape`, `skimr`, `tibble`, `tidyverse`입니다.
+
+
 
 ## 결과 해석
 
